@@ -1,23 +1,33 @@
-import logo from './logo.svg';
+// App.jsx or wherever you need the loading screen
+import React, { useState } from 'react';
+import EducationalLoadingScreen from './components/EducationalLodaingScreen/EducationalLoadingScreen';
 import './App.css';
-
 function App() {
+  const [showLoading, setShowLoading] = useState(true);
+  const [showVideo, setShowVideo] = useState(false);
+
+  if (showLoading) {
+    return (
+      <EducationalLoadingScreen 
+        onComplete={() => {
+          setShowLoading(false);
+          setShowVideo(true);
+        }}
+      />
+    );
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {showVideo && (
+          <iframe
+          className="youtube-video"
+          src="https://www.youtube.com/embed/fDAOImre32s?controls=1&modestbranding=1&rel=0&iv_load_policy=3"
+          title="STEM Learning Video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+      )}
     </div>
   );
 }

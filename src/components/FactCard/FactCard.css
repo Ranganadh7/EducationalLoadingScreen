@@ -1,0 +1,246 @@
+/* FactCard.css - Fun & Creative Student-Friendly Design */
+
+.fact-card-modern {
+  background: white;
+  border-radius: 32px;
+  padding: 2rem 1.8rem;
+  box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.02);
+  animation: cardFadeIn 0.5s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+  height: auto;
+  min-height: 380px;
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.3s ease;
+  margin-bottom: 100px;
+}
+
+.fact-card-modern:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 28px 40px -14px rgba(0, 0, 0, 0.2);
+}
+
+/* Floating playful emojis */
+.floating-emoji-1,
+.floating-emoji-2,
+.floating-emoji-3 {
+  position: absolute;
+  font-size: 2rem;
+  opacity: 0.2;
+  pointer-events: none;
+  z-index: 0;
+  animation: float 6s infinite ease-in-out;
+}
+
+.floating-emoji-1 {
+  top: 15px;
+  right: 20px;
+  animation-delay: 0s;
+}
+
+.floating-emoji-2 {
+  bottom: 20px;
+  left: 15px;
+  animation-delay: 1.5s;
+  font-size: 2.2rem;
+}
+
+.floating-emoji-3 {
+  top: 40%;
+  left: -10px;
+  animation-delay: 0.8s;
+  font-size: 1.8rem;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(5deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+/* Card sparkle effect */
+.card-sparkle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #ffb347, #ff6b6b, #4facfe, #00f2fe);
+  border-radius: 0 0 32px 32px;
+  opacity: 0.6;
+}
+
+@keyframes cardFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.fact-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.8rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px dashed #f0eef3;
+  position: relative;
+  z-index: 2;
+}
+
+.fact-category {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: linear-gradient(135deg, #f8f9ff 0%, #f0f3fa 100%);
+  padding: 0.5rem 1.2rem;
+  border-radius: 40px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #2c3e66;
+  letter-spacing: -0.2px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+  backdrop-filter: blur(2px);
+}
+
+.category-icon {
+  font-size: 1rem;
+  filter: drop-shadow(0 1px 1px rgba(0,0,0,0.1));
+}
+
+.fact-icon {
+  font-size: 2.5rem;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+  transition: transform 0.2s ease;
+}
+
+.fact-card-modern:hover .fact-icon {
+  transform: scale(1.05) rotate(3deg);
+}
+
+.fact-body {
+  text-align: center;
+  position: relative;
+  padding: 1.8rem 0.5rem;
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.fact-quote {
+  font-size: 5rem;
+  color: #e9eef5;
+  position: absolute;
+  top: -10px;
+  left: -5px;
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+  opacity: 0.7;
+  z-index: 0;
+}
+.fact-text {
+  font-size: 1.2rem;
+  font-family: system-ui, "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", sans-serif;
+  line-height: 1.55;
+  color: #1f2a44;
+
+  margin: 0;
+  position: relative;
+  z-index: 2;
+  max-width: 90%;
+  font-weight: 500;
+
+  /* ❌ REMOVE THESE (IMPORTANT) */
+  /* background-clip: text; */
+  /* -webkit-background-clip: text; */
+  /* color: transparent; */
+  /* text-shadow: ... */
+}
+
+.fact-text.text-pop {
+  animation: textPop 0.45s cubic-bezier(0.34, 1.2, 0.64, 1);
+}
+
+@keyframes textPop {
+  0% {
+    transform: scale(0.94) translateY(4px);
+    opacity: 0;
+    letter-spacing: -0.5px;
+  }
+  40% {
+    transform: scale(1.02) translateY(-2px);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+    letter-spacing: normal;
+  }
+}
+
+.fact-footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  text-align: center;
+  border-top: 1px solid #f0edf5;
+  position: relative;
+  z-index: 2;
+}
+
+.fact-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background: #fff6e8;
+  padding: 0.5rem 1.5rem;
+  border-radius: 60px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #ef2222;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+  transition: all 0.2s ease;
+}
+
+.fact-card-modern:hover .fact-badge {
+  background: #fff0df;
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(184, 92, 26, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .fact-card-modern {
+    padding: 1.5rem;
+    border-radius: 28px;
+  }
+  
+  .fact-text {
+    font-size: 1rem;
+  }
+  
+  .fact-icon {
+    font-size: 2rem;
+  }
+
+  .fact-quote {
+    font-size: 3.5rem;
+    top: -5px;
+  }
+
+  .floating-emoji-1,
+  .floating-emoji-2,
+  .floating-emoji-3 {
+    opacity: 0.1;
+  }
+}

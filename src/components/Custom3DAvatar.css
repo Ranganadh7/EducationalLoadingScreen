@@ -1,0 +1,277 @@
+/* Custom3DAvatar.css - No background, just transparent */
+
+.welcome-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeInUp 0.6s ease;
+    background: transparent;
+
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .welcome-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+    background: transparent;
+  }
+  
+  /* Avatar Area */
+  .avatar-area {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .avatar-ring {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(255,255,255,0.25), transparent);
+    border-radius: 50%;
+    animation: ringPulse 2s ease infinite;
+  }
+  
+  @keyframes ringPulse {
+    0%, 100% { transform: scale(1); opacity: 0.4; }
+    50% { transform: scale(1.1); opacity: 0.7; }
+  }
+  
+  .avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.25));
+    animation: avatarBounce 3s ease infinite;
+  }
+  
+  @keyframes avatarBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+  }
+  
+  /* Hand Wave */
+  .hand-wave {
+    position: absolute;
+    bottom: 15px;
+    right: 5px;
+    font-size: 2.5rem;
+    filter: drop-shadow(0 5px 10px rgba(0,0,0,0.2));
+    transform-origin: bottom center;
+  }
+  
+  /* Speech Card - Transparent with blur */
+  .speech-container {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(12px);
+    border-radius: 32px;
+    padding: 28px;
+    max-width: 450px;
+    box-shadow: 0 25px 45px rgba(0,0,0,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+    height:450px;
+  }
+  
+  .mentor-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 6px 16px;
+    border-radius: 30px;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 16px;
+  }
+  
+  .greeting-text {
+    font-size: 1.6rem;
+    color: #333;
+    margin: 0 0 16px 0;
+  }
+  
+  .wave-icon {
+    display: inline-block;
+    animation: handWiggle 1s ease infinite;
+    margin-right: 8px;
+  }
+  
+  @keyframes handWiggle {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(20deg); }
+    75% { transform: rotate(-10deg); }
+  }
+  
+  .message-box {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    min-height: 100px;
+  }
+  
+  .typing-message {
+    font-size: 1.6rem;
+    line-height: 1;
+    color: #444;
+    margin: 0;
+  }
+  
+  .cursor {
+    animation: blinkCursor 1s step-end infinite;
+    color: #667eea;
+    font-weight: bold;
+  }
+  
+  @keyframes blinkCursor {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  /* Typing Loader */
+  .typing-loader {
+    display: flex;
+    gap: 6px;
+    margin-top: 12px;
+    padding: 8px 0;
+  }
+  
+  .typing-loader span {
+    width: 8px;
+    height: 8px;
+    background: #667eea;
+    border-radius: 50%;
+    animation: loaderDot 1.4s ease infinite;
+  }
+  
+  .typing-loader span:nth-child(1) { animation-delay: 0s; }
+  .typing-loader span:nth-child(2) { animation-delay: 0.2s; }
+  .typing-loader span:nth-child(3) { animation-delay: 0.4s; }
+  
+  @keyframes loaderDot {
+    0%, 60%, 100% {
+      transform: scale(0.8);
+      opacity: 0.5;
+    }
+    30% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+  }
+  
+  /* Topic Tags */
+  .topic-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .tag {
+    background: rgba(0, 0, 0, 0.05);
+    padding: 6px 14px;
+    border-radius: 25px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #555;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(4px);
+  }
+  
+  .tag span {
+    margin-right: 6px;
+  }
+  
+  /* Progress Tracker */
+  .progress-tracker {
+    width: 100%;
+    height: 4px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  
+  .progress-fill {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
+    border-radius: 4px;
+    animation: fillProgress 5s linear forwards;
+  }
+  
+  @keyframes fillProgress {
+    from { width: 0%; }
+    to { width: 100%; }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .welcome-layout {
+      flex-direction: column;
+      gap: 1.5rem;
+      padding: 1rem;
+    }
+    
+    .avatar-area {
+      width: 200px;
+      height: 200px;
+    }
+    
+    .hand-wave {
+      font-size: 1.8rem;
+      bottom: 8px;
+      right: -5px;
+    }
+    
+    .speech-container {
+      padding: 20px;
+      max-width: 340px;
+    }
+    
+    .greeting-text {
+      font-size: 1.3rem;
+    }
+    
+    .typing-message {
+      font-size: 0.9rem;
+    }
+    
+    .tag {
+      font-size: 0.7rem;
+      padding: 4px 10px;
+    }
+  }
+  
+  /* Reduced Motion */
+  @media (prefers-reduced-motion: reduce) {
+    .avatar-img,
+    .avatar-ring,
+    .hand-wave,
+    .progress-fill {
+      animation: none;
+    }
+    
+    .progress-fill {
+      width: 100%;
+    }
+  }

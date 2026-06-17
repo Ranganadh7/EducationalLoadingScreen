@@ -36,3 +36,48 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+.youtube-video {
+  position: fixed;
+  inset: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  border: none;
+  z-index: 999999;
+
+  /* Keeps aspect ratio while filling screen */
+  object-fit: cover;
+
+  /* Performance improvements */
+  display: block;
+  overflow: hidden;
+}
+
+/* Mobile devices */
+@media screen and (max-width: 768px) {
+  .youtube-video {
+      width: 100vw;
+      height: 100vh;
+  }
+}
+
+/* Tablets */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .youtube-video {
+      width: 100vw;
+      height: 100vh;
+  }
+}
+
+/* Large screens and ultrawide monitors */
+@media screen and (min-width: 1025px) {
+  .youtube-video {
+      width: 100vw;
+      height: 100vh;
+  }
+}
+
