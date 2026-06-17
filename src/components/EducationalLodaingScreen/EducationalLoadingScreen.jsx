@@ -18,11 +18,11 @@ import Custom3DAvatar from '../Custom3DAvatar';
 const TOTAL_TIME = 17;
 
 const CARD_SEQUENCE = [
-  { id: 0, type: 'fact', data: stemFacts[0], duration: 3, title: 'Fun Fact' },
+  { id: 0, type: 'fact', data: stemFacts[0], duration: 5, title: 'Fun Fact' },
 
-  { id: 1, type: 'quiz', data: quizQuestions[0], duration: 4, title: 'Quiz' },
-  { id: 2, type: 'mnemonic', data: mnemonic, duration: 6, title: 'Mnemonic' },
-  { id: 3, type: 'fact', data: stemFacts[1], duration: 3, title: 'Fun Fact' },
+  // { id: 1, type: 'quiz', data: quizQuestions[0], duration: 3, title: 'Quiz' },
+  { id: 2, type: 'mnemonic', data: mnemonic, duration: 7, title: 'Mnemonic' },
+  { id: 3, type: 'fact', data: stemFacts[1], duration: 5, title: 'Fun Fact' },
 
 ];
 
@@ -45,7 +45,7 @@ const EducationalLoadingScreen = ({ onComplete }) => {
     welcomeTimerRef.current = setTimeout(() => {
       setShowWelcome(false);
       setCurrentCardIndex(0);
-    }, 5000);
+    }, 6000);
 
     return () => {
       if (welcomeTimerRef.current) clearTimeout(welcomeTimerRef.current);

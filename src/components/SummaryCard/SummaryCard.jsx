@@ -60,13 +60,7 @@ const SummaryCard = ({
           </div>
           
           <div className="accomplishments-grid">
-            <div className="accomplishment-card-final">
-              <div className="accomp-emoji">🎯</div>
-              <div className="accomp-text">
-                <h4>Solved {correctAnswers} quiz questions{correctAnswers !== 1 ? 's' : ''}</h4>
-              
-              </div>
-            </div>
+       
             
             <div className="accomplishment-card-final">
               <div className="accomp-emoji">💡</div>
@@ -87,7 +81,7 @@ const SummaryCard = ({
         </div>
 
         {/* Quiz Results */}
-        <div className="quiz-results-section">
+        {/* <div className="quiz-results-section">
           <div className="section-title-final">
             <span>📋 Challenge Results</span>
           </div>
@@ -107,14 +101,14 @@ const SummaryCard = ({
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Motivational Message */}
         <div className="motivation-section-final">
           <div className="duo-character-final">
             <span className="duo-emoji-final">👏🏻 </span>
             <div className="motivation-message">
-              <p>🎉 Fantastic job, learner! 🎉</p>
+              <p>🎉 Fantastic job, Kiddo! 🎉</p>
               <p className="sub-motivation">You turned 20 seconds into valuable learning time!</p>
             </div>
           </div>

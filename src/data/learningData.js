@@ -2,7 +2,7 @@
 export const stemFacts = [
   {
     id: 1,
-    fact: "🧠💡 Computers understand everything using only 0s and 1s 🔢—called binary code, which powers all apps 📱, games 🎮, and websites 🌍!",
+    fact: "🧠💡 Computers understand everything using only 0s and 1s 🔢—called binary code, which powers all apps 📱,` and websites 🌍!",
     category: "Tech Fun",
     icon: "💻",
     color: "#00c6ff"
