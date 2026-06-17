@@ -1,6 +1,36 @@
-# 🎓 EduLearn - Interactive Educational Platform
 
-A modular, React-based educational platform designed to make learning engaging through interactive cards, quizzes, mnemonic systems, and animated UI experiences.
+# Educational Loading Screen
+
+A React-based loading screen that transforms a 20-second video buffering wait into a micro-learning moment for high school students studying programming and STEM.
+
+Live Demo: https://ranganadh7.github.io/EducationalLoadingScreen/
+
+
+## What It Does
+
+Instead of showing a blank spinner while a video lesson loads, this screen uses the wait time to teach students something small but meaningful — a quick programming tip, a CS concept, or a STEM fact. Every second of loading becomes a second of learning.
+
+The screen cycles through bite-sized educational cards timed to the 20-second load window, accompanied by a progress bar so students always know how long remains.
+
+
+### Why This Approach
+
+Reframing the wait: A loading screen is usually a dead zone — frustrating and forgettable. By filling it with content that's directly relevant to what the student is about to learn, we turn friction into value. Students finish loading already primed for the lesson.
+
+Micro-learning works: Short, atomic facts are easier to retain than long explanations. 20 seconds is exactly the right window — long enough to read and absorb one idea, short enough that it never feels like homework.
+
+Relevance builds engagement: The content shown is tied to programming and STEM — the same subjects students are here to study. This reinforces the learning environment rather than breaking it.
+
+
+### Features
+
+
+Timed content cards that rotate during the 20-second load
+Animated progress bar showing remaining load time
+Curated programming tips, CS concepts, and STEM facts
+Responsive layout — works on desktop, tablet, and mobile
+Built with React functional components and hooks
+
 
 ---
 
