@@ -1,70 +1,169 @@
-# Getting Started with Create React App
+🚀 EduLearn - Interactive Educational Platform
+A modular React-based educational platform featuring engaging learning modules, interactive quizzes, mnemonic aids, and a delightful user experience.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+📋 Table of Contents
+Overview
 
-## Available Scripts
+Architecture
 
-In the project directory, you can run:
+Component Library
 
-### `npm start`
+Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Usage
 
-### `npm test`
+Contributing
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+License
 
-### `npm run build`
+🎯 Overview
+EduLearn transforms learning into an interactive experience with:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Fact Cards - Animated educational content with category icons
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Mnemonic Cards - Visual memory aids for better retention
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Quiz Cards - Interactive assessments with immediate feedback
 
-### `npm run eject`
+Progress Tracking - Visual indicators (ProgressBar, ScoreBar)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3D Avatars - Personalized visual engagement
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Loading Screen - Engaging transitions with encouraging messages
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+🏗️ Architecture
+Design Approach
+Component-Based Modular Architecture with clear separation of concerns
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Atomic Design principles for reusability
 
-## Learn More
+Unidirectional Data Flow for predictable state management
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+CSS Modules for encapsulated styling
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Component Structure
+text
+components/
+├── EducationalLoadingScreen/    # Loading experience
+├── FactCard/                    # Educational facts display
+├── MnemonicCard/                # Memory aids
+├── QuizCard/                    # Interactive assessments
+├── ProgressBar/                 # Progress tracking
+├── ScoreBar/                    # Score display
+├── SummaryCard/                 # Session overview
+├── Custom3DAvatar/              # 3D visual engagement
+├── data/
+│   └── learningData.js          # Centralized data
+├── hooks/
+│   ├── useLoadingTimer.js       # Loading logic
+│   └── useSoundEffects.js       # Audio feedback
+└── styles/
+    └── loadingScreen.css        # Global styles
+📦 Component Library
+Component	Purpose	Key Features
+EducationalLoadingScreen	Engaging loading experience	Progress bar, rotating messages, floating emojis
+FactCard	Display educational facts	Category badges, animated text pop, icons
+MnemonicCard	Visual memory aids	Association graphics, memory cues
+QuizCard	Interactive assessments	Multiple choice, immediate feedback
+ProgressBar	Visual progress tracking	Smooth transitions, percentage display
+ScoreBar	Score display	Animated updates, visual indicators
+SummaryCard	Session overview	Statistics, completion percentage
+Custom3DAvatar	Personalized engagement	3D rendering, interactive animations
+🛠️ Tech Stack
+Technology	Purpose
+React 18+	Frontend framework
+CSS Modules	Component styling
+CSS Keyframes + React Transition Group	Animations
+Three.js (optional)	3D avatar rendering
+Jest + React Testing Library	Testing
+Create React App / Vite	Build tool
+📦 Installation
+bash
+# Clone repository
+git clone https://github.com/yourusername/edulearn.git
+cd edulearn
 
-### Code Splitting
+# Install dependencies
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Start development server
+npm start
 
-### Analyzing the Bundle Size
+# Build for production
+npm run build
+💻 Usage
+Quick Start
+Import desired components from the components directory
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Configure component props as per API requirements
 
-### Making a Progressive Web App
+Use learningData.js for centralized content management
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Leverage custom hooks (useLoadingTimer, useSoundEffects) for enhanced functionality
 
-### Advanced Configuration
+Component Integration
+Loading Screen: Wrap your main app with EducationalLoadingScreen during initialization
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Learning Modules: Combine FactCard, MnemonicCard, and QuizCard for complete lessons
 
-### Deployment
+Progress Tracking: Use ProgressBar and ScoreBar to monitor user advancement
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Summary: Display session statistics with SummaryCard
 
-### `npm run build` fails to minify
+Data Management
+All educational content resides in data/learningData.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Structure includes facts, quizzes, mnemonics, and session metadata
+
+Easily extensible for additional content types
+
+⚡ Performance Optimizations
+Memoization: All components memoized to prevent unnecessary re-renders
+
+GPU-Accelerated Animations: Uses CSS transform and opacity only
+
+Lazy Loading: Code-splitting for faster initial load
+
+Cleanup: Proper cleanup of intervals and timeouts
+
+♿ Accessibility
+ARIA labels on all interactive elements
+
+Full keyboard navigation support
+
+Respects prefers-reduced-motion media query
+
+Semantic HTML structure for screen readers
+
+🌐 Browser Support
+Browser	Version
+Chrome	60+
+Firefox	55+
+Safari	12+
+Edge	79+
+🤝 Contributing
+Fork the repository
+
+Create feature branch: git checkout -b feature/amazing-feature
+
+Commit changes: git commit -m 'Add amazing feature'
+
+Push: git push origin feature/amazing-feature
+
+Open Pull Request
+
+Guidelines:
+
+Follow existing ESLint/Prettier configuration
+
+Write tests for new features
+
+Update documentation accordingly
+
+📄 License
+MIT License - see LICENSE file for details.
+
+Live Demo: View Demo
+Maintainer: Ranganadh
