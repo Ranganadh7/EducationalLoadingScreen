@@ -52,7 +52,7 @@ Built with React functional components and hooks
 
 ## 📖 Overview
 
-**EduLearn** transforms traditional learning into an interactive experience using:
+**EduLearn** transforms the traditional loading Screen into an interactive learnign experience using:
 
 - 📚 Fact Cards – Animated educational content with categories  
 - 🧠 Mnemonic Cards – Memory enhancement techniques  
