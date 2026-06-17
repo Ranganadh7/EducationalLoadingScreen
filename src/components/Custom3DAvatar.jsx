@@ -37,8 +37,10 @@ export default function Custom3DAvatar({ onComplete }) {
           transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
         >
           <div className="avatar-ring" />
+        
           <motion.img
-            src="/Avatar.png"
+            src={`${process.env.PUBLIC_URL}/Avatar.png`}
+
             alt="Nova STEM Guide"
             className="avatar-img"
             animate={{ rotate: [0, 3, -3, 0] }}

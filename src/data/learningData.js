@@ -2,18 +2,18 @@
 export const stemFacts = [
   {
     id: 1,
-    fact: "⚡🌩️ Lightning is about five times hotter than the surface of the Sun ☀️—each strike is a massive burst of natural energy ⚡🔥!",
-    category: "Physics Fun",
-    icon: "⚡",
-    color: "#667eea"
+    fact: "🧠💡 Computers understand everything using only 0s and 1s 🔢—called binary code, which powers all apps 📱, games 🎮, and websites 🌍!",
+    category: "Tech Fun",
+    icon: "💻",
+    color: "#00c6ff"
   },
   {
     id: 2,
-    fact: "🐙💙 Octopuses have three hearts ❤️❤️❤️ and blue blood 🔵—and when they swim 🏊‍♂️, two of their hearts actually stop beating!",
-    category: "Science Fun",
-    icon: "🐙",
+    fact: "🌐💻 The internet’s first message was supposed to be 'LOGIN' 🔐—but it crashed after just 'LO' 😄, marking the beginning of internet history!",
+    category: "Tech Fun",
+    icon: "🌐",
     color: "#4facfe"
-  } 
+  }
 ];
 
 export const quizQuestions = [

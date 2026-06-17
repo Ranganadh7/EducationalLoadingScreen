@@ -3,9 +3,10 @@ import { useCallback, useRef, useEffect } from 'react';
 
 export const useSoundEffects = () => {
   const sounds = useRef({
-    correct: new Audio("/sounds/correct.mp3"),
-    wrong: new Audio("/sounds/wrong.mp3"),
-    complete: new Audio("/sounds/complete.mp3")
+    
+    correct:new Audio(process.env.PUBLIC_URL + "/sounds/correct.mp3"),
+    wrong: new Audio(process.env.PUBLIC_URL + "/sounds/wrong.mp3"),
+    complete: new Audio(process.env.PUBLIC_URL + "/sounds/complete.mp3")
   });
 
   useEffect(() => {
