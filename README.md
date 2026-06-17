@@ -64,9 +64,8 @@ components/
 └── styles/
     └── loadingScreen.css
 
-
----
-🧩 Component Library
+--
+### 🧩 Component Library
 Component	Purpose	Key Features
 EducationalLoadingScreen	Loading experience	Progress bar, animations, motivational messages
 FactCard	Educational facts display	Category icons, animated reveal effects
@@ -78,7 +77,7 @@ SummaryCard	Session summary	Performance analytics
 Custom3DAvatar	Visual engagement	3D animations and interactions
 ---
 
-⚙️ Tech Stack
+### ⚙️ Tech Stack
 Technology	Purpose
 React 18+	Frontend framework
 CSS Modules	Styling system
@@ -88,7 +87,7 @@ Jest / RTL	Testing
 CRA / Vite	Build tooling
 ---
 
-📥 Installation
+### 📥 Installation
 # Clone repository
 git clone https://github.com/yourusername/edulearn.git
 
@@ -105,39 +104,39 @@ npm start
 npm run build
 
 ---
-🚀 Usage
+### 🚀 Usage
 ▶ Quick Start
 Import components from /components
 Use learningData.js for centralized content
 Integrate hooks like useLoadingTimer and useSoundEffects
 ---
-🧪 Component Integration
+### 🧪 Component Integration
 Wrap app with EducationalLoadingScreen
 Combine FactCard, MnemonicCard, QuizCard for lessons
 Use ProgressBar and ScoreBar for tracking
 Display results using SummaryCard
 ---
-⚡ Performance
+### ⚡ Performance
 Optimization	Implementation
 Memoization	Prevent unnecessary re-renders
 GPU Animations	Uses transform & opacity
 Lazy Loading	Code splitting for faster load
 Cleanup	Proper interval & event cleanup
 ---
-♿ Accessibility
+### ♿ Accessibility
 ARIA labels for all interactive components
 Full keyboard navigation support
 prefers-reduced-motion compliance
 Semantic HTML structure
 ---
-🌐 Browser Support
+### 🌐 Browser Support
 Browser	Version
 Chrome	60+
 Firefox	55+
 Safari	12+
 Edge	79+
 ---
-🤝 Contributing
+### 🤝 Contributing
 Fork repository
 
 Create feature branch
@@ -153,12 +152,12 @@ Push branch
 git push origin feature/amazing-feature
 Open Pull Request
 ---
-📌 Guidelines
+### 📌 Guidelines
 Follow ESLint / Prettier rules
 Write unit tests for new features
 Update documentation when needed
 ---
-📜 License
+### 📜 License
 
 This project is licensed under the MIT License.
 
