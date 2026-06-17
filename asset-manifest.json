@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Ranganadh7/EducationalLoadingScreen/static/css/main.5f276003.css",
+    "main.js": "/Ranganadh7/EducationalLoadingScreen/static/js/main.81f79e0b.js",
+    "static/js/453.370ecb59.chunk.js": "/Ranganadh7/EducationalLoadingScreen/static/js/453.370ecb59.chunk.js",
+    "index.html": "/Ranganadh7/EducationalLoadingScreen/index.html",
+    "main.5f276003.css.map": "/Ranganadh7/EducationalLoadingScreen/static/css/main.5f276003.css.map",
+    "main.81f79e0b.js.map": "/Ranganadh7/EducationalLoadingScreen/static/js/main.81f79e0b.js.map",
+    "453.370ecb59.chunk.js.map": "/Ranganadh7/EducationalLoadingScreen/static/js/453.370ecb59.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5f276003.css",
+    "static/js/main.81f79e0b.js"
+  ]
+}
