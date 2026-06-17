@@ -63,6 +63,9 @@ components/
 │   └── useSoundEffects.js
 └── styles/
     └── loadingScreen.css
+
+
+---
 🧩 Component Library
 Component	Purpose	Key Features
 EducationalLoadingScreen	Loading experience	Progress bar, animations, motivational messages
@@ -73,6 +76,8 @@ ProgressBar	Progress tracking	Smooth animations, percentage indicator
 ScoreBar	Score visualization	Dynamic score updates
 SummaryCard	Session summary	Performance analytics
 Custom3DAvatar	Visual engagement	3D animations and interactions
+---
+
 ⚙️ Tech Stack
 Technology	Purpose
 React 18+	Frontend framework
@@ -81,6 +86,8 @@ Framer Motion	Animations
 Three.js (optional)	3D rendering
 Jest / RTL	Testing
 CRA / Vite	Build tooling
+---
+
 📥 Installation
 # Clone repository
 git clone https://github.com/yourusername/edulearn.git
@@ -96,33 +103,40 @@ npm start
 
 # Build production version
 npm run build
+
+---
 🚀 Usage
 ▶ Quick Start
 Import components from /components
 Use learningData.js for centralized content
 Integrate hooks like useLoadingTimer and useSoundEffects
+---
 🧪 Component Integration
 Wrap app with EducationalLoadingScreen
 Combine FactCard, MnemonicCard, QuizCard for lessons
 Use ProgressBar and ScoreBar for tracking
 Display results using SummaryCard
+---
 ⚡ Performance
 Optimization	Implementation
 Memoization	Prevent unnecessary re-renders
 GPU Animations	Uses transform & opacity
 Lazy Loading	Code splitting for faster load
 Cleanup	Proper interval & event cleanup
+---
 ♿ Accessibility
 ARIA labels for all interactive components
 Full keyboard navigation support
 prefers-reduced-motion compliance
 Semantic HTML structure
+---
 🌐 Browser Support
 Browser	Version
 Chrome	60+
 Firefox	55+
 Safari	12+
 Edge	79+
+---
 🤝 Contributing
 Fork repository
 
@@ -138,10 +152,12 @@ Push branch
 
 git push origin feature/amazing-feature
 Open Pull Request
+---
 📌 Guidelines
 Follow ESLint / Prettier rules
 Write unit tests for new features
 Update documentation when needed
+---
 📜 License
 
 This project is licensed under the MIT License.
@@ -156,10 +172,3 @@ Ranganadh
 
 
 ---
-
-If you want next upgrade, I can also:
-- add **GitHub badges (build, npm, license, deploy status)**
-- convert this into a **portfolio-grade README with visuals & GIFs**
-- or make a **viral README with animations + shields.io badges**
-
-Just tell me 👍
